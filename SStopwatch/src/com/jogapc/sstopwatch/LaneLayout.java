@@ -47,11 +47,11 @@ public class LaneLayout extends LinearLayout {
 	this.addView(textViewChronometer);
 	this.addView(scrollSplit, scrollLayoutParams);
 	this.scrollSplit.addView(scrollFrame);
-	for (int i = 0; i < 30; i++) {
-	    TextView lapText = new TextView(context);
-	    lapText.setText("lap " + i);
-	    scrollFrame.addView(lapText);
-	}
+//	for (int i = 0; i < 30; i++) {
+//	    TextView lapText = new TextView(context);
+//	    lapText.setText("lap " + i);
+//	    scrollFrame.addView(lapText);
+//	}
 	this.addView(buttonLap);
 	this.addView(toggleButton);
 	this.addView(textViewLane);
@@ -72,5 +72,9 @@ public class LaneLayout extends LinearLayout {
     public ToggleButton getToggleButton() {
 	return toggleButton;
     }
+
+	public LinearLayout getScrollFrame() {
+		return scrollFrame;
+	}
 
 }
